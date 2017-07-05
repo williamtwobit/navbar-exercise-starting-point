@@ -7,6 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+    <script type ="text/javascript" src ="app.js"></script>
   </head>
   <body>
     <header class="container">
@@ -26,15 +31,16 @@
           </g>
         </svg>
       </div>
+    </header>
 
       <!-- Main menu -->
-      <nav class="hidden">
+      <nav class="mainmenu">
         <ul>
-          <li>
+          <li class="item">
             <a href="#">
-              Courses
+              COURSES
             </a>
-            <nav class="hidden">
+            <nav class="dropdown">
               <ul>
                 <li>
                   <a href="#">
@@ -57,11 +63,11 @@
               </ul>
             </nav>
           </li>
-          <li>
+          <li class ="item">
             <a href="#">
-              How it works
+              HOW IT WORKS
             </a>
-            <nav class="hidden">
+            <nav class="dropdown">
               <ul>
                 <li>
                   <a href="#">
@@ -92,21 +98,20 @@
           </li>
           <li>
             <a href="#">
-              Reviews
+              REVIEWS
             </a>
           </li>
           <li>
             <a href="#">
-              Pricing
+              PRICING
             </a>
           </li>
           <li>
             <a href="#">
-              Sign in
+              SIGN IN
             </a>
           </li>
         </ul>
       </nav>
-    </header>
   </body>
 </html>

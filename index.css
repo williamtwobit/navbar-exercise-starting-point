@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+      color: #6799ff;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -48,9 +53,42 @@ body {
 
 header{
     justify-content: space-between;
-    width:90%;
+    width:100%;
     padding: 10px;
     padding-right: 15px;
     border-bottom: .5px solid lightgray;
     align-items: center;
+}
+
+.mainmenu {
+    
+    width: 100%;
+}
+
+li {
+    padding: 15px;
+     border-bottom: .5px solid lightgray;
+}
+
+img {
+    display: none;
+}
+
+.dropdown a {
+    color: black !important;
+}
+
+.dropdown li {
+    border-bottom: none;
+    padding: 10px !important;
+}
+
+.dropdown {
+    background-color: #F9FBFF;
+}
+
+.dropdown ul:first-child{
+
+    padding-top: 10px;
+
 }
