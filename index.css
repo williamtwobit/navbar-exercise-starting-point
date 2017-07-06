@@ -47,30 +47,52 @@ body {
 }
 
 .logo{
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom:10px;
     order:0;
 }
 
 .hamburger{
+    margin-right:15px;
+    margin-top:10px;
+    margin-bottom:10px;
     order:1;
+}
+
+.mainmenu{
+    order:2;
 }
 
 header{
     justify-content: space-between;
+    flex-wrap: wrap;
     width:100%;
-    padding: 10px;
-    padding-right: 15px;
     border-bottom: .5px solid lightgray;
     align-items: center;
 }
 
 .mainmenu {
-    
+    display:none;
     width: 100%;
 }
 
-li {
+.mainmenu > li:first-child{
+    border-top: .5px solid lightgray;
+}
+
+.mainmenu > li:last-child{
+    border:none;
+}
+
+.dropdown > ul > li{
+    padding:0px;
+}
+
+
+.mainmenu > li {
     padding: 15px;
-     border-bottom: .5px solid lightgray;
+    border-bottom: .5px solid lightgray;
 }
 
 img {
@@ -88,10 +110,57 @@ img {
 
 .dropdown {
     background-color: #F9FBFF;
+    display:none;
 }
 
 .dropdown ul:first-child{
-
     padding-top: 10px;
+}
 
+/* ALL ABOVE IS PRIMARY / MOBILE STYLING. BEGIN FIRST BREAKPOINT */
+
+@media (min-width: 575px){
+    .mainmenu{
+        display:flex;
+    }
+    .hamburger{
+        display:none;
+    }
+    .header{
+        justify-content: flex-start
+    }
+    .logo{
+        justify-content: flex-start;
+    }
+    .mainmenu{
+        display:flex;
+        justify-content: space-between;
+        width:fit-content;
+    }
+    .mainmenu > li{
+        border:none !important;
+        padding:0px !important;
+        margin-right:10px;
+    }
+    .dropdown > ul{
+        display:flex;
+        position:absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 40px;
+        justify-content:space-around;
+    }
+    .dropdown > ul > li > a{
+        display:flex;
+        flex-direction: column;
+        width:110px;
+        text-align: center;
+    }
+    img{
+        width:100px;
+        display:initial;
+        margin:auto;
+        margin-bottom:5px;
+    }
 }
